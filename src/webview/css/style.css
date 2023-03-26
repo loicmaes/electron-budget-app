@@ -1,0 +1,95 @@
+body {
+  display: flex;
+  color: hsl(225deg, 24%, 30%);
+  background-color: hsl(154deg, 30%, 99%);
+}
+
+.menu {
+  gap: 1.5em;
+  width: 15em;
+  display: flex;
+  height: 100vh;
+  flex: 0 0 auto;
+  color: hsl(154deg, 30%, 99%);
+  padding: 1.5em 1.5em;
+  flex-direction: column;
+  background-color: hsl(202deg, 61%, 54%);
+}
+.menu__header--brand {
+  font-weight: 900;
+  font-size: 1.25em;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+.menu__content {
+  display: flex;
+  flex-direction: column;
+}
+.menu__content__section {
+  gap: 0.5em;
+  display: flex;
+  padding: 1em 0;
+  flex-direction: column;
+  border-top: 1px solid hsla(154deg, 30%, 99%, 0.15);
+}
+.menu__content__section__label {
+  opacity: 0.5;
+  font-size: 0.75em;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+.menu__content__section__link {
+  padding: 0.75em 1em;
+  border-radius: 0.5em;
+  transition-duration: 200ms;
+  transition-property: background-color;
+  transition-timing-function: ease-in-out;
+}
+.menu__content__section__link:hover {
+  background-color: hsla(154deg, 30%, 99%, 0.15);
+}
+
+.content {
+  flex: 1 1 100%;
+}
+.content__header {
+  gap: 2.5em;
+  display: flex;
+  padding: 1.5em 2em;
+  align-items: center;
+  background-color: hsl(154deg, 30%, 99%);
+  justify-content: space-between;
+  box-shadow: 0 0.5em 2em 0 hsla(225deg, 24%, 30%, 0.05);
+}
+.content__header__page-name {
+  font-weight: 700;
+  font-size: 1.25em;
+  text-transform: uppercase;
+}
+.content__header__search {
+  width: 17em;
+  display: flex;
+  flex: 0 0 auto;
+  height: 2.5em;
+  overflow: hidden;
+  border-radius: 0.5em;
+  align-items: stretch;
+  background-color: hsla(225deg, 24%, 30%, 0.05);
+}
+.content__header__search--field {
+  flex: 1 1 100%;
+  padding: 0 1em;
+}
+.content__header__search--button {
+  opacity: 1;
+  flex: 0 0 auto;
+  color: hsl(154deg, 30%, 99%);
+  aspect-ratio: 1/1;
+  background-color: hsl(202deg, 61%, 54%);
+  transition: opacity 200ms ease-in-out;
+}
+.content__header__search--button:hover {
+  opacity: 0.75;
+}
+
+/*# sourceMappingURL=style.css.map */

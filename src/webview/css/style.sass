@@ -1,0 +1,93 @@
+@use "book"
+
+body
+  display: flex
+  color: book.$black
+  background-color: book.$white
+
+.menu
+  gap: 1.5em
+  width: 15em
+  display: flex
+  height: 100vh
+  flex: 0 0 auto
+  color: book.$white
+  padding: 1.5em 1.5em
+  flex-direction: column
+  background-color: book.$primary
+
+  &__header
+    &--brand
+      font-weight: 900
+      font-size: 1.25em
+      letter-spacing: .1em
+      text-transform: uppercase
+
+  &__content
+    display: flex
+    flex-direction: column
+
+    &__section
+      gap: .5em
+      display: flex
+      padding: 1em 0
+      flex-direction: column
+      border-top: 1px solid book.$border-tint
+
+      &__label
+        opacity: .5
+        font-size: .75em
+        font-weight: 800
+        text-transform: uppercase
+
+      &__link
+        padding: .75em 1em
+        border-radius: .5em
+        transition-duration: 200ms
+        transition-property: background-color
+        transition-timing-function: ease-in-out
+
+        &:hover
+          background-color: book.$border-tint
+
+.content
+  flex: 1 1 100%
+
+  &__header
+    gap: 2.5em
+    display: flex
+    padding: 1.5em 2em
+    align-items: center
+    background-color: book.$white
+    justify-content: space-between
+    box-shadow: 0 .5em 2em 0 book.$shadow-tint
+
+    &__page-name
+      font-weight: 700
+      font-size: 1.25em
+      text-transform: uppercase
+
+    &__search
+      width: 17em
+      display: flex
+      flex: 0 0 auto
+      height: 2.5em
+      overflow: hidden
+      border-radius: .5em
+      align-items: stretch
+      background-color: book.$shadow-tint
+
+      &--field
+        flex: 1 1 100%
+        padding: 0 1em
+
+      &--button
+        opacity: 1
+        flex: 0 0 auto
+        color: book.$white
+        aspect-ratio: 1 / 1
+        background-color: book.$primary
+        transition: opacity 200ms ease-in-out
+
+        &:hover
+          opacity: .75
