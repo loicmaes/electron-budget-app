@@ -1,0 +1,13 @@
+{
+  "name": "budget-manager",
+  "version": "0.1",
+  "main": "src/App.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "Loïc MAES",
+  "license": "GPL-3.0",
+  "devDependencies": {
+    "electron": "^23.2.0"
+  }
+}
