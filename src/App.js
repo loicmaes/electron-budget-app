@@ -2,7 +2,7 @@ const { app, BrowserWindow } = require('electron')
 const path = require('path')
 
 // Create a window and load HTML content
-function createWindow() {
+async function createWindow() {
     const win = new BrowserWindow({
         width: 1440,
         height: 1024,
@@ -10,7 +10,7 @@ function createWindow() {
         maximizable: false,
         minimizable: false,
         fullscreenable: false,
-        //icon: path.join(__dirname, `assets/imgs/icon.ico`),
+        icon: path.join(__dirname, `assets/imgs/icon.ico`),
         webPreferences: {
             devTools: true,
             nodeIntegration: false,
@@ -19,12 +19,12 @@ function createWindow() {
         }
     })
 
-    win.loadFile(path.join(__dirname, "webview/index.html"))
+    await win.loadFile(path.join(__dirname, "webview/index.html"))
 }
 
 // When electron is ready, create window and listen
-app.whenReady().then(() => {
-    createWindow()
+app.whenReady().then(async () => {
+    await createWindow()
 
     // Listener "activate"
     app.on("activate", () => {

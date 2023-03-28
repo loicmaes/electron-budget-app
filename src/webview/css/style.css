@@ -66,30 +66,13 @@ body {
   font-size: 1.25em;
   text-transform: uppercase;
 }
-.content__header__search {
-  width: 17em;
-  display: flex;
-  flex: 0 0 auto;
-  height: 2.5em;
-  overflow: hidden;
+.content__header__account {
+  padding: 0.5em 1em;
   border-radius: 0.5em;
-  align-items: stretch;
+  transition: background-color 200ms ease-in-out;
+}
+.content__header__account:hover {
   background-color: hsla(225deg, 24%, 30%, 0.05);
-}
-.content__header__search--field {
-  flex: 1 1 100%;
-  padding: 0 1em;
-}
-.content__header__search--button {
-  opacity: 1;
-  flex: 0 0 auto;
-  color: hsl(154deg, 30%, 99%);
-  aspect-ratio: 1/1;
-  background-color: hsl(202deg, 61%, 54%);
-  transition: opacity 200ms ease-in-out;
-}
-.content__header__search--button:hover {
-  opacity: 0.75;
 }
 
 /*# sourceMappingURL=style.css.map */
